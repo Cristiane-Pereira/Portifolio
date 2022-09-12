@@ -698,22 +698,25 @@
                     <div class="contact_inputs grid">
                         <input type="hidden" name="_next" value="https://resonant-heliotrope-9bf2dc.netlify.app/sucesso.html">
                         <input type="hidden" name="_subject" value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!">
-                        <div class="contact_content">
-                            <label for="name" class="contact_label">Nome</label>
-                            <input type="text"name="name" class="contact_input" required >
+                        <div class="contact_content input-container">
+                            <label for="name" class="contact_label input-labe">Nome*</label>
+                            <input type="text"name="name" class="contact_input input" data-tipo="nome" required >
+                            <span class="input-mensagem-erro"></span>
                         </div>
 
-                        <div class="contact_content">
-                            <label for="email" class="contact_label">Email</label>
-                            <input type="email" name="email" class="contact_input" required>
+                        <div class="contact_content input-container">
+                            <label for="email" class="contact_label input-labe">Email*</label>
+                            <input type="email" name="email" class="contact_input input" data-tipo="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" title="Insira um email válido." required>
+                            <span class="input-mensagem-erro"></span>
                         </div>
 
-                        <div class="contact_content">
-                            <label for="project" class="contact_label">Projeto</label>
-                            <input type="text"name="project" class="contact_input" required>
+                        <div class="contact_content input-container">
+                            <label for="project" class="contact_label input-labe">Assunto*</label>
+                            <input type="text"name="project" class="contact_input input" data-tipo="subject" required>
+                            <span class="input-mensagem-erro"></span>
                         </div>
 
-                        <div class="contact_content">
+                        <div class="contact_content input-container">
                             <label for="message" class="contact_label">Mensagem</label>
                             <textarea name="message" id="" cols="0" rows="7" class="contact_input" required></textarea>
                         </div>
