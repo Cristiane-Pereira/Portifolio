@@ -366,6 +366,9 @@ img {
 .button--white:hover {
   background-color: #fff;
 }
+.button--flex {
+  border: none;
+}
 
 /*==================== ABOUT ====================*/
 .about_img {
@@ -870,6 +873,12 @@ img {
   background-color: var(--text-color-light);
 }
 
+/*==================== SUCESS MESSAGE ====================*/
+.sucess_icon {
+  color: green;
+  font-size: 40px;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -965,9 +974,6 @@ img {
   body {
     margin: 0;
   }
-  /* .section {
-    padding: 6rem 0 2rem;
-  } */
   .section_subtitle {
     margin_bottom: 4rem;
   }
